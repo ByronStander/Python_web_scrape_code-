@@ -14,5 +14,5 @@ for tr in rows:
     row = [i.text for i in td]
     
     jsondata = json.dumps(row, indent=2, sort_keys=True)
-with open('data.txt', 'w') as f:
+with open('data.json', 'w') as f:
    f.write(jsondata)
